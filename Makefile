@@ -6,11 +6,11 @@
 #    By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/14 11:02:23 by jocroon           #+#    #+#              #
-#    Updated: 2024/10/15 10:31:23 by jocroon          ###   ########.fr        #
+#    Updated: 2024/10/15 14:35:01 by jocroon          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SOURCES = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c
+SOURCES = *.c
 INCLUDES = .
 OBJECTS = $(SOURCES:%.c=%.o)
 NAME = libft.a
@@ -23,10 +23,11 @@ CFLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	$(AR) $@ $^
+	$(CC) $(CFLAGS) -c $(SOURCES) -I $(INCLUDES)
+	$(AR) $(NAME) $(OBJECTS)
 
 %.o: %c
-	$(CC) $(CFLAGS) -c $< -o $@ -I$(INCLUDES)
+	$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:
 	$(RM) $(OBJECTS)
