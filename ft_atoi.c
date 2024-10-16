@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 13:33:35 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/15 14:16:54 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/10/16 14:42:22 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,8 @@ int	ft_atoi(const char *str)
 		|| str[i] == '\f' || str[i] == '\r' || str[i] == ' ')
 		i++;
 	if (str[i] == '-')
-	{
 		sign *= -1;
-		i++;
-	}
-	if (str[i] == '-' && str[i] == '+')
+	if (str[i] == '-' || str[i] == '+')
 		i++;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
