@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 10:58:06 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/16 14:36:51 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/10/16 14:46:11 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <string.h>
 # include <stdlib.h>
-# include <ctype.h>
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
