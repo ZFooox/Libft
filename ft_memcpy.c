@@ -6,13 +6,13 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 15:41:02 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/17 16:40:38 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/10/18 12:05:12 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
 	size_t				i;
 	unsigned char		*d;
@@ -23,7 +23,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	if (!dest && !src)
 		return (NULL);
 	i = 0;
-	while (i < n)
+	while (i < len)
 	{
 		d[i] = s[i];
 		i++;
