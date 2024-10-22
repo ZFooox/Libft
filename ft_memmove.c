@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 11:47:22 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/18 12:07:49 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/10/22 15:46:29 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	unsigned char		*d;
 	const unsigned char	*s;
 
-	if (!dest || !src)
-		return (NULL);
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
 	if (d < s)
@@ -77,20 +75,7 @@ int main(void)
     printf("Test 3 - Après ft_memmove avec n = 0:\n");
     printf("Source: %s\n", src3);
     printf("Destination: %s\n", dest3);
-
-    // Test 4: Copie avec pointeurs nuls
-    printf("\nTest 4 - Avant ft_memmove avec pointeurs nuls:\n");
-    printf("Source: (null)\n");
-    printf("Destination: (null)\n");
-
-    char *result = ft_memmove(NULL, NULL, 5);
-
-    printf("Test 4 - Après ft_memmove avec pointeurs nuls:\n");
-    if (result == NULL)
-        printf("Result: NULL\n");
-    else
-        printf("Result: %p\n", result);
-
+    
     return 0;
 }
 */
