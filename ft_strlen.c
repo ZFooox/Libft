@@ -6,18 +6,18 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:22:59 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/14 14:41:07 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/10/22 17:59:46 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 
 	i = 0;
-	while (s[i])
+	while (str[i])
 	{
 		i++;
 	}
