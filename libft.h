@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 10:58:06 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/28 12:51:04 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/10/28 15:03:48 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len_big);
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t alloc_len, size_t size);
 char	*ft_strdup(const char *src);
+char	*ft_substr(char const *str, unsigned int start, size_t len);
 
 #endif
