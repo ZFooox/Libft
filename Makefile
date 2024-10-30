@@ -6,11 +6,11 @@
 #    By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/14 11:02:23 by jocroon           #+#    #+#              #
-#    Updated: 2024/10/15 14:35:01 by jocroon          ###   ########.fr        #
+#    Updated: 2024/10/30 13:44:09 by jocroon          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SOURCES = *.c
+SOURCES = *.c #ECRIRE TTE LES FONCTIONS A LA MAIN POUR LE RENDU
 INCLUDES = .
 OBJECTS = $(SOURCES:%.c=%.o)
 NAME = libft.a

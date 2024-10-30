@@ -6,29 +6,26 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:55:31 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/30 12:35:05 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/10/30 14:11:47 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	get_tot_len(const char *str1, const char *str2)
-{
-	int	tot_len;
-
-	tot_len = (ft_strlen(str1) + ft_strlen(str2) + 1);
-	return (tot_len);
-}
-
 char	*ft_strjoin(char const *str1, char const *str2)
 {
-	int		len;
 	int		i;
 	int		j;
 	char	*result;
 
-	len = get_tot_len(str1, str2);
-	result = (char *)malloc(len * sizeof(char));
+	if (!str1 && !str2)
+		return (NULL);
+	if (!str1)
+		return ((char *) str2);
+	if (!str2)
+		return ((char *) str1);
+	result = (char *)malloc((ft_strlen(str1) + ft_strlen(str2) + 1)
+			* sizeof(char));
 	if (!result)
 		return (NULL);
 	j = 0;
@@ -41,6 +38,7 @@ char	*ft_strjoin(char const *str1, char const *str2)
 	result[j] = '\0';
 	return (result);
 }
+
 /*
 #include <stdio.h>
 
