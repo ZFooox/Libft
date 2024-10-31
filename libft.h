@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 10:58:06 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/30 11:28:08 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/10/31 13:33:37 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,12 @@ void	*ft_memchr(const void *str, int c, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len_big);
 int		ft_atoi(const char *str);
+
 void	*ft_calloc(size_t alloc_len, size_t size);
 char	*ft_strdup(const char *src);
+
 char	*ft_substr(char const *str, unsigned int start, size_t len);
 char	*ft_strjoin(char const *str1, char const *str2);
+char	*ft_strtrim(char const *str, char const *set);
 
 #endif
