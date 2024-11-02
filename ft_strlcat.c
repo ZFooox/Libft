@@ -6,12 +6,12 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:25:05 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/22 12:26:03 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/02 12:09:04 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//pour récupérer la longueur de la concaténation de deux string
 size_t	ft_strlcat(char *dest, const char *src, size_t dest_size)
 {
 	size_t	i;

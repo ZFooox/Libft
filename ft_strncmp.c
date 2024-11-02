@@ -6,12 +6,12 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 13:22:16 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/25 16:35:22 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/02 12:11:08 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//pour comparer deux chaîne en spécifiant une taille
 int	ft_strncmp(const char *str1, const char *str2, size_t len)
 {
 	size_t	i;

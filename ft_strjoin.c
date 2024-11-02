@@ -6,12 +6,12 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:55:31 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/30 14:11:47 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/02 12:10:03 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//pour combiner/concaténer deux tableaux
 char	*ft_strjoin(char const *str1, char const *str2)
 {
 	int		i;

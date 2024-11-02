@@ -6,12 +6,12 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:52:00 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/23 14:34:22 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/02 12:08:31 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//pour rechercher un caractère dans une chaîne en commençant par la fin
 char	*ft_strrchr(const char *str, int c)
 {
 	int		i;

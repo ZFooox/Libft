@@ -6,12 +6,12 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 12:44:08 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/28 12:50:51 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/02 12:10:26 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//pour copier en allouant de la mémoire/place
 char	*ft_strdup(const char *src)
 {
 	char	*dest;

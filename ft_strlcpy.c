@@ -6,12 +6,12 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 11:29:46 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/22 11:59:32 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/02 12:09:39 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//pour récupérer la longueur de la longueur de la copie
 size_t	ft_strlcpy(char *dest, const char *src, size_t dest_size)
 {
 	size_t	i;

@@ -6,12 +6,12 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:02:51 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/29 10:47:58 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/02 12:08:15 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//pour extraire une sous chaîne d'une chaîne de caractère
 char	*ft_substr(char const *str, unsigned int start, size_t len)
 {
 	char	*substr;

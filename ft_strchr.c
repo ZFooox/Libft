@@ -6,12 +6,12 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 15:28:06 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/22 18:59:55 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/02 12:08:25 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//pour rechercher un caractère dans une chaîne en commençant par le début
 char	*ft_strchr(const char *str, int c)
 {
 	unsigned int	i;
