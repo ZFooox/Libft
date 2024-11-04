@@ -6,15 +6,15 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 14:14:18 by jocroon           #+#    #+#             */
-/*   Updated: 2024/11/04 11:50:39 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/04 15:36:44 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//sert à diviser un tableau en plusieurs autres tableaux 
-//dés que le séparateur est trouvé
+// sert à diviser un tableau en plusieurs autres tableaux 
+// dés que le séparateur est trouvé
 
-//pour compter les mots
+// pour compter les mots
 static int	word_counter(const char *str, char sep)
 {
 	int	count;
@@ -40,12 +40,14 @@ static int	word_counter(const char *str, char sep)
 	return (count);
 }
 
-//pour allouer la mémoire pour les mots
+// pour allouer la mémoire pour les mots
 static char	*word_alloc(const char *start, const char *end)
 {
 	char	*word;
 	int		i;
 
+	if (!start || !end)
+		return (NULL);
 	i = 0;
 	word = (char *)malloc(sizeof(char) * (end - start + 1));
 	if (!word)
@@ -61,6 +63,8 @@ static char	**init_result(char const *str, char sep)
 {
 	char	**result;
 
+	if (!str)
+		return (NULL);
 	result = (char **)malloc(sizeof(char *) * (word_counter(str, sep) + 1));
 	if (!result)
 		return (NULL);
@@ -68,28 +72,31 @@ static char	**init_result(char const *str, char sep)
 }
 
 //remplir le tableaux de résultats
+//si return -1 -> ok et si autre -> échec
 static int	fill_result(char **result, char const *str, char sep)
 {
-	int		i;
-	char	*start;
+	int		tab_index;
+	char	*new_word;
 
-	i = 0;
+	if (!result || !str)
+		return (0);
+	tab_index = 0;
 	while (*str)
 	{
 		if (*str != sep)
 		{
-			start = (char *)str;
+			new_word = (char *)str;
 			while (*str && *str != sep)
 				str++;
-			result[i] = word_alloc(start, str);
-			if (!result[i])
-				return (i);
-			i++;
+			result[tab_index] = word_alloc(new_word, str);
+			if (!result[tab_index])
+				return (tab_index);
+			tab_index++;
 		}
 		else
 			str++;
 	}
-	result[i] = NULL;
+	result[tab_index] = NULL;
 	return (-1);
 }
 
@@ -114,3 +121,26 @@ char	**ft_split(char const *str, char sep)
 	}
 	return (result);
 }
+
+/* #include <stdio.h>
+
+int	main(void)
+{
+	char	**result;
+	int		i;
+
+	result = ft_split("I!love!campus!19", '!');
+	i = 0;
+	
+	if (!result[i])
+	{
+		printf("ERREUR");
+		return (1);
+	}
+	while (result[i])
+	{
+		printf("Mot %d: %s\n", i, result[i]);
+		i++;
+	}
+	return (0);
+} */

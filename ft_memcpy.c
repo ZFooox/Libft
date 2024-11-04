@@ -6,12 +6,13 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 15:41:02 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/22 15:46:54 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/04 21:39:18 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//permet de copier le contenu de src dans dest
+//il ne peut pas y avoir de chevauchement
 void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
 	size_t				i;
