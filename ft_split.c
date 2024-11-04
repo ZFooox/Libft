@@ -6,12 +6,12 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 14:14:18 by jocroon           #+#    #+#             */
-/*   Updated: 2024/11/03 13:53:32 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/04 11:50:39 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//sert à diviser un tableau en plusieurs autres tableau 
+//sert à diviser un tableau en plusieurs autres tableaux 
 //dés que le séparateur est trouvé
 
 //pour compter les mots
@@ -19,19 +19,23 @@ static int	word_counter(const char *str, char sep)
 {
 	int	count;
 	int	is_word;
+	int	i;
 
+	if (!str)
+		return (0);
 	count = 0;
 	is_word = 0;
-	while (*str)
+	i = 0;
+	while (str[i])
 	{
-		if (*str != sep && is_word == 0)
+		if (str[i] != sep && is_word == 0)
 		{
 			is_word = 1;
 			count++;
 		}
-		else if (*str == sep)
+		else if (str[i] == sep)
 			is_word = 0;
-		str++;
+		i++;
 	}
 	return (count);
 }
