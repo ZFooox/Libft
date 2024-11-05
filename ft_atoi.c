@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 13:33:35 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/16 14:42:22 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/05 15:08:00 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,11 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-/*
-#include <stdio.h>
+
+/* #include <stdio.h>
 int	main(void)
 {
-	printf("%d", ft_atoi("    ---+--+1234ab567"));
+	printf("%d\n", ft_atoi("   --+-1234edf455"));
+	printf("%d", atoi("   --+-1234edf455"));
 	return (0);
-}
-*/
+} */

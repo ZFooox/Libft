@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:47:27 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/22 18:02:41 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/05 13:46:03 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	ft_bzero(void *str, size_t n)
 {
 	ft_memset(str, 0, n);
 }
-/*
-#include <stdio.h>
+
+/* #include <stdio.h>
 
 int main(void)
 {
@@ -28,5 +28,4 @@ int main(void)
     printf("Après ft_bzero: %s\n", array);
 
     return 0;
-}
-*/
+} */
