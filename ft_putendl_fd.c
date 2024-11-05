@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 15:28:52 by jocroon           #+#    #+#             */
-/*   Updated: 2024/11/05 15:39:49 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/05 18:08:27 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,6 @@ void	ft_putendl_fd(char *str, int fd)
 	char	str[] = "Hello World!";
 	int	fd = 1;
 
-	ft_putendl_fd(str, fd);
+	ft_putendl_fd(str, 1);
 	return (0);
-} */
+}  */

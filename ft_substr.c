@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:02:51 by jocroon           #+#    #+#             */
-/*   Updated: 2024/11/05 17:03:04 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/05 18:16:49 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,16 +37,16 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
+
 /*
 #include <stdio.h>
-
 int main(void)
 {
     char *str = "Hello, world!";
     char *substr;
 
     // sous-chaîne au début str (renvoie : "Hello")
-    substr = ft_substr(str, 0, 5);
+    substr = ft_substr(str, 0, -5);
     printf("Test 1: %s\n", substr);
 
     // sous-chaîne au milieu str (renvoie : "world")

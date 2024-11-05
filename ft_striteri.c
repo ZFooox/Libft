@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 14:10:41 by jocroon           #+#    #+#             */
-/*   Updated: 2024/11/03 14:22:16 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/05 17:57:52 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 //d'une chaîne sans en créer de nouvelle
 void	ft_striteri(char *str, void (*fct)(unsigned int, char*))
 {
-	unsigned int	i;
+	size_t	i;
 
 	if (!str || !fct)
 		return ;

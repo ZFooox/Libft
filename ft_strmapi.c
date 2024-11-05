@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 12:44:03 by jocroon           #+#    #+#             */
-/*   Updated: 2024/11/03 14:20:05 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/05 18:09:11 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 char	*ft_strmapi(char const *str, char (*fct)(unsigned int, char))
 {
 	char			*result;
-	unsigned int	i;
+	size_t			i;
 	size_t			len;
 
 	if (!str || !fct)
