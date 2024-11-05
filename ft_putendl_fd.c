@@ -6,12 +6,13 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 15:28:52 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/31 15:56:28 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/05 15:39:49 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//permet d'afficher une chaîne de caractère suivie
+//d'un retour à la ligne avec un descripteur de fichier spé
 void	ft_putendl_fd(char *str, int fd)
 {
 	size_t	i;
@@ -26,3 +27,12 @@ void	ft_putendl_fd(char *str, int fd)
 	}
 	write (fd, "\n", 1);
 }
+
+/* int	main(void)
+{
+	char	str[] = "Hello World!";
+	int	fd = 1;
+
+	ft_putendl_fd(str, fd);
+	return (0);
+} */

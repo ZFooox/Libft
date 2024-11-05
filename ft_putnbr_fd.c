@@ -6,12 +6,13 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 15:44:45 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/31 15:53:41 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/05 15:34:46 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//permet de transformer des int en char
+//et de les écrire dans le descripteur de fichier spécifié
 void	ft_putnbr_fd(int nb, int fd)
 {
 	if (nb == -2147483648)
@@ -33,3 +34,12 @@ void	ft_putnbr_fd(int nb, int fd)
 	else
 		ft_putchar_fd(nb + 48, fd);
 }
+
+/*
+int	main(void)
+{
+	int	nb = 1234;
+	int fd = 2;
+	ft_putnbr_fd(nb, fd);
+	return (0);
+} */
