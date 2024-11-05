@@ -6,12 +6,13 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 09:47:32 by jocroon           #+#    #+#             */
-/*   Updated: 2024/11/05 00:27:59 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/05 11:17:16 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //transforme des int en char (string)
+//fct pour avoir la taille de la suite de nbr
 static int	nbr_len(int nbr)
 {
 	int	len;
@@ -27,6 +28,7 @@ static int	nbr_len(int nbr)
 	return (len);
 }
 
+//fonction principale
 char	*ft_itoa(int nbr)
 {
 	int		len;
