@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 15:41:02 by jocroon           #+#    #+#             */
-/*   Updated: 2024/11/04 21:39:18 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/05 11:14:34 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t len)
 	}
 	return (dest);
 }
-/*
-#include <stdio.h>
+
+/* #include <stdio.h>
 
 int main(void)
 {
@@ -48,5 +48,4 @@ int main(void)
     printf("Destination: %s\n", dest);
 
     return 0;
-}
-*/
+} */
