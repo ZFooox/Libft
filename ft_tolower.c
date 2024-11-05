@@ -6,12 +6,12 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:31:39 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/16 14:33:41 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/05 16:56:08 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//transforme des majuscule en minuscule
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
