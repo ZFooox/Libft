@@ -6,25 +6,26 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:03:33 by jocroon           #+#    #+#             */
-/*   Updated: 2024/10/24 16:07:39 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/05 12:21:43 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//compare la ce qui est stocké dans la mémoire de str1
+//avec ce qui est en mémoire de str2
 int	ft_memcmp(const void *str1, const void *str2, size_t len)
 {
 	size_t			i;
-	unsigned char	*s1;
-	unsigned char	*s2;
+	unsigned char	*tmp_str1;
+	unsigned char	*tmp_str2;
 
 	i = 0;
-	s1 = (unsigned char *) str1;
-	s2 = (unsigned char *) str2;
+	tmp_str1 = (unsigned char *) str1;
+	tmp_str2 = (unsigned char *) str2;
 	while (i < len)
 	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+		if (tmp_str1[i] != tmp_str2[i])
+			return (tmp_str1[i] - tmp_str2[i]);
 		i++;
 	}
 	return (0);
