@@ -41,6 +41,8 @@ The goals of this project are to:
 
 If you want to contribute to this project, feel free to create a **pull request**. All contributions are welcome! 🎉
 
+And I know I still have to protect the pointers !
+
 ---
 
 Thank you for your interest in my libft. If you have any questions or suggestions, feel free to open an **issue** or contact me! 😊
