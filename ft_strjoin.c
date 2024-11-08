@@ -6,7 +6,7 @@
 /*   By: jocroon <jocroon@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:55:31 by jocroon           #+#    #+#             */
-/*   Updated: 2024/11/02 12:10:03 by jocroon          ###   ########.fr       */
+/*   Updated: 2024/11/08 12:28:03 by jocroon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ char	*ft_strjoin(char const *str1, char const *str2)
 	if (!str1 && !str2)
 		return (NULL);
 	if (!str1)
-		return ((char *) str2);
+		return (ft_strdup((char *) str2));
 	if (!str2)
-		return ((char *) str1);
+		return (ft_strdup((char *) str1));
 	result = (char *)malloc((ft_strlen(str1) + ft_strlen(str2) + 1)
 			* sizeof(char));
 	if (!result)
